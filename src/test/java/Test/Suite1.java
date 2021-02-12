@@ -63,7 +63,7 @@ public class Suite1 {
 		co.setAcceptInsecureCerts(true);
 		WebDriver d = new ChromeDriver();
 		d.get("http://magento.com");
-		
+		System.out.println("testcase starts"); 
 		d.manage().window().maximize();
 		d.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		d.findElement(By.xpath("//*[@id=\"block-header\"]/ul/li[9]/a/span[1]/div")).click();
